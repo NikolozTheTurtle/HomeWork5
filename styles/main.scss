@@ -1,0 +1,111 @@
+$body-back: #65826f;
+$article-back: #f8ed41;
+$body-border: #375a37;
+$article-text: #4e743d;
+
+
+@font-face {
+    font-family: bebas;
+    src: url(../fonts/BebasNeue-Regular.ttf);
+}
+@font-face {
+    font-family: caveat;
+    src: url(../fonts/Caveat-VariableFont_wght.ttf);
+}
+
+
+body {
+    background-color: $body-back;
+    border: 3px solid $body-border;
+    nav {
+        .container {
+            position: relative;
+            ul {
+                padding-top: 70px;
+                position: absolute;
+                width: 100%;
+                text-align: center;                
+                li {
+                    display: inline;
+                    padding: 0 28px;
+                    a {
+                        text-decoration: none;
+                        color: white;
+                        font-family: bebas;
+                        font-size: 32px;
+                        font-weight: 200;
+                    }
+                }
+            }
+            img {
+                width: 200px;
+                float: right; 
+                margin-top: 40px;           
+            }
+        }
+        
+        
+    }
+    section {
+        margin-top: 85px;
+        .container {
+            .article-row {
+                display: grid;
+                grid-template-columns: auto auto;
+                gap: 145px;
+                .card {
+                    background-color: $article-back;
+                    padding: 30px 30px 145px 30px;
+                    p {
+                        font-family: caveat;
+                    }
+                    img {
+                        float: right;
+                        width: 200px;
+                        aspect-ratio: 1;
+                    }
+                }
+            }
+        }
+    }
+    footer {
+        margin-top: 100px;
+    }
+    .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+}
+
+
+
+.container {
+    width: 100%;
+    margin: auto;
+}
+
+
+
+// responsive and container widths (P.S. responsive only works down to 768px, after that I was lazy to do :) )
+@media (min-width: 768px) {
+.container {
+      width: 750px;
+    }
+  }
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
+  @media screen and (max-width: 1024px) {
+    .send-logo {
+        width: 100px !important;
+        margin-right: 50px;
+    }
+  }

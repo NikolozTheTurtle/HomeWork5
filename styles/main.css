@@ -1,0 +1,94 @@
+@font-face {
+  font-family: bebas;
+  src: url(../fonts/BebasNeue-Regular.ttf);
+}
+@font-face {
+  font-family: caveat;
+  src: url(../fonts/Caveat-VariableFont_wght.ttf);
+}
+body {
+  background-color: #65826f;
+  border: 3px solid #375a37;
+}
+body nav .container {
+  position: relative;
+}
+body nav .container ul {
+  padding-top: 70px;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+}
+body nav .container ul li {
+  display: inline;
+  padding: 0 28px;
+}
+body nav .container ul li a {
+  text-decoration: none;
+  color: white;
+  font-family: bebas;
+  font-size: 32px;
+  font-weight: 200;
+}
+body nav .container img {
+  width: 200px;
+  float: right;
+  margin-top: 40px;
+}
+body section {
+  margin-top: 85px;
+}
+body section .container .article-row {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 145px;
+}
+body section .container .article-row .card {
+  background-color: #f8ed41;
+  padding: 30px 30px 145px 30px;
+}
+body section .container .article-row .card p {
+  font-family: caveat;
+}
+body section .container .article-row .card img {
+  float: right;
+  width: 200px;
+  aspect-ratio: 1;
+}
+body footer {
+  margin-top: 100px;
+}
+body .clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.container {
+  width: 100%;
+  margin: auto;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .send-logo {
+    width: 100px !important;
+    margin-right: 50px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
